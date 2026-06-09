@@ -776,6 +776,15 @@
     }
 
     /* ── MUSIC PLAYER ── */
+    #yt-player {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+      z-index: -9999;
+    }
+
     #music-btn {
       position: fixed;
       bottom: 24px;
@@ -852,7 +861,8 @@
   <canvas id="petals-canvas"></canvas>
 
   <!-- MUSIC PLAYER (ẩn iframe YouTube) -->
-  <div id="yt-player" style="position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none;"></div>
+  <iframe id="yt-player" src="about:blank" allow="autoplay"
+    style="position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; z-index: -9999;" tabindex="-1"></iframe>
 
   <!-- Nút nhạc nổi -->
   <button id="music-btn" title="Nhạc nền" aria-label="Bật/tắt nhạc">♪</button>
@@ -894,7 +904,7 @@
         </div>
       </div>
 
-      <p class="announce reveal">Trân trọng báo tin Lễ Vu Quy<br>của con chúng tôi</p>
+      <p class="announce reveal">Trân trọng báo tin Lễ Vu Quy<br>của chúng tôi</p>
 
       <!-- Tên cô dâu chú rể -->
       <div class="names-block reveal">
@@ -913,7 +923,7 @@
       <!-- Hôn lễ -->
       <div class="wedding-date-block reveal">
         <p class="event-label">Hôn lễ được cử hành tại tư gia</p>
-        <div class="date-big">19 · 07 · 2026</div>
+        <div class="date-big">18 · 07 · 2026</div>
         <div class="lunar">Nhằm ngày 06 tháng 06 năm Bính Ngọ</div>
         <div class="time-tag">Vào lúc 08 : 00</div>
       </div>
